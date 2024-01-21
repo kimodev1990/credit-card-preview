@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Creidt Card Details">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>Card Details</title>
+</head>
+
+<body>
+    <main class="md:flex md:justify-center md:items-center md:max-w-7xl md:min-h-screen md:mx-auto md:space-x-32">
+        <section id="upper" class="md:w-1/2">
+            <div id="card-images" class="p-6 mx-auto max-w-md  relative">
+                <div id="back-card-details" class="relative md:left-20 md:top-60 h-56 rounded-xl left-7 shadow-2xl">
+                    <div class="absolute top-24 right-14 text-white">
+                        <p class="cvc-number-live">000</p>
+                    </div>
+                </div>
+                <div id="front-card-details"
+                    class="relative md:right-0 md:bottom-60 h-56 rounded-xl bottom-24 right-7 shadow-2xl">
+                    <div class="absolute p-7 text-white text-xl tracking-widest w-full">
+                        <img src="./images/card-logo.svg" alt="card logo">
+                        <p class="number-card-live mt-14 mb-5 sm:text-base xs:text-sm">0000 0000 0000 0000
+                        </p>
+                        <div class="w-full flex items-center justify-between text-sm">
+                            <p class="name-card-live">Jane Appleseed</p>
+                            <p> <span class="month-date-live">00</span>/<span class="year-date-live">00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lower" class="relative bottom-14 md:w-1/2 md:bottom-0">
+            <div id="card-details" class="mx-auto max-w-md relative">
+                <div>
+                    <h1 class="uppercase tracking-widest">Cardholder Name</h1>
+                    <input type="text" id="card-detail-required"
+                        class="name-entered border-2 border-Light-grayish-violet outline-none w-full text-lg p-3 rounded-lg mt-2"
+                        placeholder="e.g. Jane Appleseed">
+                    <h2 id="error" class="text-Red-error mt-1 invisible">Wrong Format</h2>
+                </div>
+                <div class="mt-5">
+                    <h1 class="uppercase tracking-widest">Cardholder number</h1>
+                    <input type="text" id="card-detail-required"
+                        class="numbers-entered border-2 border-Light-grayish-violet outline-none w-full text-lg p-3 rounded-lg mt-2"
+                        maxlength="16" placeholder="e.g. 1234 5678 9123 0000">
+                    <h2 id="error" class="text-Red-error mt-1 invisible">Wrong Format</h2>
+                </div>
+                <div class="mt-5 flex items-center space-x-3">
+                    <div class="flex flex-col items-start justify-center w-1/2 space-y-2">
+                        <h1>Exp. Date (MM/YY)</h1>
+                        <div class="flex items-center space-x-3">
+                            <div class="flex flex-col">
+                                <input type="text" id="card-detail-required"
+                                    class="month-entered border-2 border-Light-grayish-violet outline-none w-full text-lg p-3 rounded-lg"
+                                    maxlength="2" placeholder="MM">
+                                <h2 id="error" class="text-Red-error text-sm mt-1 invisible">Wrong Format</h2>
+                            </div>
+                            <div>
+                                <input type="text" id="card-detail-required"
+                                    class="year-entered border-2 border-Light-grayish-violet outline-none w-full text-lg p-3 rounded-lg"
+                                    maxlength="2" placeholder="YY">
+                                <h2 id="error" class="text-Red-error text-sm mt-1 invisible">Wrong Format</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start w-1/2 space-y-2">
+                        <h1>CVC</h1>
+                        <input type="text" id="card-detail-required"
+                            class="cvc-entered border-2 border-Light-grayish-violet outline-none w-full text-lg p-3 rounded-lg"
+                            maxlength="3" placeholder="e.g. 123">
+                        <h2 id="error" class="text-Red-error text-sm mt-1 invisible">Wrong Format</h2>
+                    </div>
+                </div>
+                <button id="go-forward" class="bg-Very-dark-violet text-white rounded-lg p-3 w-full text-lg mt-7">
+                    Confirm
+                </button>
+            </div>
+        </section>
+        <section id="success" class="relative bottom-14 md:bottom-0 hidden">
+            <div class="flex flex-col items-center mx-auto max-w-md md:w-96 md:mr-40 ml-20">
+                <div>
+                    <img src="./images/icon-complete.svg" alt="correct logo for success">
+                </div>
+                <h1 class="text-3xl uppercase tracking-widest mt-10 mb-6">
+                    Thank you!
+                </h1>
+                <h2 class="text-xl">
+                    We've added your card details
+                </h2>
+                <button id="get-back" class="bg-Very-dark-violet text-white rounded-lg p-3 w-full text-lg mt-8">
+                    Continue
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
