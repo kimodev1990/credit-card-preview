@@ -36,7 +36,7 @@
                 </div>
             </div>
         </section>
-        <section id="lower" class="relative bottom-14 md:w-1/2 md:bottom-0">
+        <section id="lower" class="relative bottom-14 md:w-1/2 md:bottom-0 ">
             <div id="card-details" class="mx-auto max-w-md relative">
                 <div>
                     <h1 class="uppercase tracking-widest">Cardholder Name</h1>
@@ -52,30 +52,30 @@
                         maxlength="16" placeholder="e.g. 1234 5678 9123 0000">
                     <h2 id="error" class="text-Red-error mt-1 invisible">Wrong Format</h2>
                 </div>
-                <div class="mt-5 flex items-center space-x-3">
-                    <div class="flex flex-col items-start justify-center w-1/2 space-y-2">
+                <div class="mt-5 flex items-start space-x-1">
+                    <div class="flex flex-col items-start justify-center w-8/12 space-y-2">
                         <h1>Exp. Date (MM/YY)</h1>
-                        <div class="flex items-center space-x-3">
+                        <div class="flex items-center space-x-1">
                             <div class="flex flex-col">
                                 <input type="text" id="card-detail-required"
                                     class="month-entered border-2 border-Light-grayish-violet outline-none w-full text-lg p-3 rounded-lg"
                                     maxlength="2" placeholder="MM">
-                                <h2 id="error" class="text-Red-error text-sm mt-1 invisible">Wrong Format</h2>
+                                <h2 id="error" class="text-Red-error text-xs mt-2 invisible">Wrong Format</h2>
                             </div>
                             <div>
                                 <input type="text" id="card-detail-required"
                                     class="year-entered border-2 border-Light-grayish-violet outline-none w-full text-lg p-3 rounded-lg"
                                     maxlength="2" placeholder="YY">
-                                <h2 id="error" class="text-Red-error text-sm mt-1 invisible">Wrong Format</h2>
+                                <h2 id="error" class="text-Red-error text-xs mt-2 invisible">Wrong Format</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col items-start w-1/2 space-y-2">
+                    <div class="flex flex-col justify-center items-start w-4/12 space-y-2">
                         <h1>CVC</h1>
                         <input type="text" id="card-detail-required"
                             class="cvc-entered border-2 border-Light-grayish-violet outline-none w-full text-lg p-3 rounded-lg"
                             maxlength="3" placeholder="e.g. 123">
-                        <h2 id="error" class="text-Red-error text-sm mt-1 invisible">Wrong Format</h2>
+                        <h2 id="error" class="text-Red-error text-xs invisible">Wrong Format</h2>
                     </div>
                 </div>
                 <button id="go-forward" class="bg-Very-dark-violet text-white rounded-lg p-3 w-full text-lg mt-7">
@@ -84,7 +84,7 @@
             </div>
         </section>
         <section id="success" class="relative bottom-14 md:bottom-0 hidden">
-            <div class="flex flex-col items-center mx-auto max-w-md md:w-96 md:mr-40 ml-20">
+            <div class="flex flex-col items-center mx-auto max-w-md md:w-96">
                 <div>
                     <img src="./images/icon-complete.svg" alt="correct logo for success">
                 </div>

@@ -593,10 +593,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -637,8 +633,12 @@ video {
   height: 14rem;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .w-full {
@@ -669,10 +669,10 @@ video {
   justify-content: space-between;
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -720,11 +720,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -738,6 +733,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .uppercase {
@@ -775,7 +775,7 @@ video {
   background-size: 100% 65%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 832px) {
   body {
     background-image: url("../images/bg-main-desktop.png");
     background-repeat: no-repeat;
@@ -813,7 +813,7 @@ video {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 832px) {
   .md\:bottom-0 {
     bottom: 0px;
   }
@@ -837,10 +837,6 @@ video {
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .md\:mr-40 {
-    margin-right: 10rem;
   }
 
   .md\:flex {
@@ -875,10 +871,5 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(8rem * var(--tw-space-x-reverse));
     margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
